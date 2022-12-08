@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wavy Card Animation Using CSS</title>
+    <link rel="stylesheet" href="card_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="content">
+          <div class="querry">
+            <h1>Question</h1>
+            <p>
+              What five letter word becomes shorter when you add two letters to
+              it? <br />
+              (ENTER THE ANSWER IN UPPERCASE)
+            </p>
+
+            <div class="input">
+              <input
+                class="text"
+                type="text"
+                placeholder="Enter Your answer"
+                height="60px"
+                width="100vw"
+                id="demo"
+              />
+              <button class="btn" onclick="myFunction()" type="submit">
+                Submit
+              </button>
+            </div>
+          </div>
+          <script>
+            function myFunction() {
+              var text = document.getElementById("demo").value;
+              if (text === "SHORT") {
+                // goto new website
+                window.location.href = "question2.html";
+              } else {
+                alert("Wrong Answer!\nOr maybe it wasn't all caps, Try Again!");
+              }
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container">
+        <div class="box">
+            <div class="content">
+            <h2>Mayur G</h2>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit.
+                Et iure assumenda suscipit
+                repudiandae iusto laboriosam
+                aliquid quis placeat quibusdam cum, quod debitis quia consequatur eos veniam! Odio nisi incidunt consequuntur?
+                </p>
+            </div>
+        </div>
+    </div> -->
+    <svg>
+      <filter id="wavy">
+        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
+          <animate
+            attributeName="baseFrequency"
+            dur="60s"
+            values="0.02;0.05;0.02"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="30" />
+      </filter>
+    </svg>
+  </body>
+</html>

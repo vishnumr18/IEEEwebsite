@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="question4.css" />
+  </head>
+  <body>
+    <div class="querry">
+      <h1>Question</h1>
+      <p>You will find something common between an elephant and me. In an orchestra, I am the strongest musical instrument. What am I?
+      <div class="input">
+        <input
+          class="text"
+          type="text"
+          placeholder="Enter Your answer"
+          height="60px"
+          width="100vw"
+          id="demo"
+        />
+        <button class="btn" onclick="myFunction()" type="submit">Submit</button>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var text = document.getElementById("demo").value;
+        if (text === "TRUMPET") {
+          // goto new website
+          window.location.href = "question10.html";
+        } else {
+          alert("Wrong Answer!\nOr maybe it wasn't all caps, Try Again!");
+        }
+      }
+    </script>
+  </body>
+</html>
