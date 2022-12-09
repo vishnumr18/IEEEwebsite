@@ -35,3 +35,64 @@ body {
   width: 200px;
   float: left;
 }
+
+p {
+  font-size: 28px;
+  font-family: Arial;
+  padding: 8px;
+  color: white;
+}
+.box1 {
+  height: 400px;
+  width: 400px;
+  border: 3px solid white;
+  margin-top: 40px;
+  margin-left: 6px;
+}
+h1 {
+  margin-top: 30px;
+  height: 30px;
+  padding-left: 130px;
+  color: white;
+}
+input {
+  height: 50px;
+
+  margin: 4px 40px 4px 25px;
+  width: 340px;
+  display: block;
+  padding: 8px;
+  font-size: 21px;
+  outline: none;
+  border-radius: 4px;
+}
+button {
+  height: 40px;
+  width: 150px;
+  background-color: #000000;
+  color: #d3d3d3;
+  margin-top: 30px;
+  margin-left: 115px;
+  font-family: Arial;
+  font-size: 21px;
+  outline: none;
+  padding: 4px;
+  border-radius: 4px;
+}
+.box1 img {
+  width: 400px;
+  height: 160px;
+}
+.box1 p {
+  margin-bottom: 20px;
+  font-family: Arial;
+  font-size: 24px;
+  padding: 8px;
+}
+.wlc p {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 50px;
+}
