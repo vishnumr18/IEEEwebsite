@@ -4,8 +4,8 @@
   padding: 0;
 }
 body {
-  width: 360px;
-  height: 914px;
+  width: 100vw;
+  height: 100vh;
   background-color: #4158d0;
   background: linear-gradient(195.99deg, #380036 -0.95%, #0cbaba 117.75%);
 }
@@ -15,6 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  margin-top: 60px;
 }
 .logo img {
   height: 90px;
@@ -23,29 +24,14 @@ body {
   padding: 5px;
 }
 .middle {
-  position: absolute;
-}
-.detect image {
-  height: 60px;
-  width: 120px;
-}
-p {
-  float: left;
-  display: inline-block;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  font-size: 24px;
-  font-family: Arial;
+  margin-top: 50px;
 }
-ul {
-  padding: 2px 10px;
-}
-ul li {
-  list-style: none;
-}
-ul li a {
-  text-decoration: none;
-  font-family: Arial;
-  color: #ee2a2a;
+.middle .dect {
+  padding-left: 4px;
+  height: 100px;
+  width: 200px;
+  float: left;
 }
